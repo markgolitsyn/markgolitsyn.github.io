@@ -48,7 +48,7 @@ input[type="checkbox"]{vertical-align:middle}
 .promo-ds{font-size:22px;padding:0 20px 15px}
 .promo-sds{font-size:15px;padding:0 20px;font-style:italic}
 #casing{padding:40px 0}
-#content{float:left;width:70%}
+#content{float:left;width:100%}
 #content fieldset{background:#fff;border:1px solid #e6e6e6;padding:20px;margin:10px 0;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
 #content fieldset legend{background:#fff;border-top:1px solid #e6e6e6;padding:5px 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
 #content .calTable{margin:0 0 20px}
