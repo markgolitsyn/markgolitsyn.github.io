@@ -1,0 +1,127 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat History Export</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .chat-container {
+                /* Changed: Removed max-width and margin: auto */
+                width: 100%; 
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                box-sizing: border-box; /* Ensures padding doesn't cause horizontal scroll */
+            }
+            .message {
+                margin-bottom: 25px;
+                padding: 20px;
+                border-radius: 8px;
+                line-height: 1.6;
+            }
+            .role-label {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+            }
+            /* Role Specific Styles */
+            .user {
+                background-color: #e3f2fd; /* Light Blue */
+                border-left: 5px solid #2196f3;
+            }
+            .user .role-label { color: #1565c0; }
+            
+            .assistant {
+                background-color: #f5f5f5; /* Light Gray */
+                border-left: 5px solid #757575;
+            }
+            .assistant .role-label { color: #616161; }
+            
+            .system {
+                background-color: #fff3e0; /* Light Orange */
+                border-left: 5px solid #ff9800;
+                font-size: 0.9em;
+            }
+            .system .role-label { color: #ef6c00; }
+
+            /* Markdown Element Styling */
+            .content h1, .content h2, .content h3 { margin-top: 0; }
+            .content p { margin-bottom: 10px; }
+            .content ul { padding-left: 20px; }
+            .content blockquote {
+                border-left: 4px solid #ccc;
+                margin: 10px 0;
+                padding-left: 15px;
+                color: #666;
+                font-style: italic;
+            }
+            .content code {
+                background-color: #e0e0e0;
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+            
+            /* Make images responsive just in case */
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <h1>Chat History</h1>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
+    
+            <div class="message system">
+                <div class="role-label">system</div>
+                <div class="content"><p>You are an advanced AI assistant.</p></div>
+            </div>
+        
+            <div class="message assistant">
+                <div class="role-label">assistant</div>
+                <div class="content"><p>The dark forest lake lay motionless, like a black mirror overturned into the earth by an ancient giant. The stars were reflected in it with such clarity that it seemed the campfire burned at the boundary of two skies, upper and lower, and the people around it sat at the very edge of the universe.</p>
+<p>The fire blazed greedily, genuinely. Not some decorative little bonfire of summer cottage dwellers, but a real taiga campfire—one and a half times human height, stacked in a well formation from dead standing timber, droning and crackling so loudly that one had to raise one's voice.</p>
+<p>Four fishing rods protruded from the water some ten meters from shore, their lines descending into the blackness at a sharp angle. The bells were silent. However, no one was looking in their direction anyway—the fishing was merely a pretext, a ritual, a justification for this night.</p>
+<p>Off to the side, on a spread-out piece of tarpaulin, a neat pyramid of weapons loomed dark. Three AK-74M assault rifles stood in a tent formation, leaning against one another, and nearby, resting on deployed bipods, lay an SVLK-14 "Sumrak"—long, predatory, with a massive barrel and optics resembling a cyclops's eye. This rifle was here like a senior officer among soldiers—its presence set the tone for the entire gathering.</p>
+<p>Around the campfire sat five men. Camouflage of various shades—from classic "flora" to digital "multicam." Faces, illuminated by the dancing light, appeared carved from dark bronze. Each one bore a patch with a call sign on his chest or sleeve.</p>
+<p>"Guys, have you heard about 'Poruchik'?" "Volk's" voice cut through the crackling of the campfire.</p>
+<p>He sat on an overturned plastic crate, broad-shouldered, with a close-cropped head and a thick reddish beard. When he smiled—and he smiled often—large white teeth were revealed, and it became clear why the call sign had stuck to him permanently.</p>
+<p>"He loaded a magazine, really loaded it..."</p>
+<p>"Volk" did not finish, choking with laughter. Sparks from the campfire rushed upward, toward the stars, like the souls of small fiery creatures.</p>
+<p>"Come on," "List" drawled skeptically.</p>
+<p>He was the complete opposite of "Volk"—thin, sinewy, with a narrow face and the attentive eyes of a sniper. It was precisely to him that the "Sumrak" on the tarpaulin belonged. "List" did not believe words. "List" believed only optics.</p>
+<p>Instead of answering, "Volk" reached for his thigh holster and extracted a pistol. The "Gyurza"—SR-1M—gleamed dully with blued steel in the firelight. Eighteen rounds of armor-piercing caliber, capable of penetrating any production-model body armor at fifty meters. A serious machine for serious people.</p>
+<p>With a movement honed to automatism, "Volk" clicked out the magazine and laid the pistol on his knee. Then he bent down, picked up a piece of birch bark the size of a palm near his feet—white, slightly curled at the edges—and placed it on the ground before him, as a priest places a cloth upon an altar.</p>
+<p>From the magazine he extracted one cartridge. 9×21 mm—long, heavy, with a characteristic conical bullet. He set it on the birch bark vertically, like a toy soldier. The cartridge wobbled but remained standing.</p>
+<p>Everyone fell silent. Even the campfire, it seemed, grew quiet.</p>
+<p>"What's that?" someone asked from the darkness beyond the circle of light. "Bur," it seemed. Or "Sych."</p>
+<p>"Volk" did not answer. He took out a second cartridge. Placed it next to the first. Two brass pillars glinted in the firelight.</p>
+<p>"Ohhh..." "List" drew out, and in his voice for the first time that evening sounded something resembling respect.</p>
+<p>"Volk" set down a third cartridge.</p>
+<p>"Whoaaa, damn!"</p>
+<p>Voices merged into a general chorus. Faceted glasses clinked—real ones, Soviet, two-hundred-gram capacity, having survived to these times God knows how. Vodka splashed over the rims.</p>
+<p>Three cartridges stood on the birch bark in a row. Three vertical obelisks, three exclamation marks.</p>
+<p>Three. Times. In a row.</p>
+<p>"'Poruchik' bet that he could load three cartridges into a magazine backwards," "Volk" finally managed, having laughed himself out. "Bullets toward himself, bases forward. Three of them. In a row."</p>
+<p>"That's impossible," said "List."</p>
+<p>"That's exactly the point."</p>
+<p>"Volk" tossed back his glass, grunted, and looked up at the sky. Sparks from the campfire flew upward, toward the stars, mingling with them, becoming indistinguishable.</p>
+<p>The lake was silent. The bells on the fishing rods were silent. The "Sumrak" on the tarpaulin was silent, its optics glinting like a wise old man who had heard stories far better than this.</p>
+<p>Somewhere far away, beyond the ink-black wall of forest, a night bird cried out briefly and hoarsely.</p></div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,266 @@
+Evgeniya Golitsyna
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat History Export</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .chat-container {
+                /* Changed: Removed max-width and margin: auto */
+                width: 100%; 
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                box-sizing: border-box; /* Ensures padding doesn't cause horizontal scroll */
+            }
+            .message {
+                margin-bottom: 25px;
+                padding: 20px;
+                border-radius: 8px;
+                line-height: 1.6;
+            }
+            .role-label {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+            }
+            /* Role Specific Styles */
+            .user {
+                background-color: #e3f2fd; /* Light Blue */
+                border-left: 5px solid #2196f3;
+            }
+            .user .role-label { color: #1565c0; }
+            
+            .assistant {
+                background-color: #f5f5f5; /* Light Gray */
+                border-left: 5px solid #757575;
+            }
+            .assistant .role-label { color: #616161; }
+            
+            .system {
+                background-color: #fff3e0; /* Light Orange */
+                border-left: 5px solid #ff9800;
+                font-size: 0.9em;
+            }
+            .system .role-label { color: #ef6c00; }
+
+            /* Markdown Element Styling */
+            .content h1, .content h2, .content h3 { margin-top: 0; }
+            .content p { margin-bottom: 10px; }
+            .content ul { padding-left: 20px; }
+            .content blockquote {
+                border-left: 4px solid #ccc;
+                margin: 10px 0;
+                padding-left: 15px;
+                color: #666;
+                font-style: italic;
+            }
+            .content code {
+                background-color: #e0e0e0;
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+            
+            /* Make images responsive just in case */
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <h1>Chat History</h1>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
+    
+            <div class="message system">
+                <div class="role-label">system</div>
+                <div class="content"><p>You are an advanced AI assistant.</p></div>
+            </div>
+        
+            <div class="message assistant">
+                <div class="role-label">assistant</div>
+                <div class="content"><h3>The "Red Banner" Institute of Y.V. Andropov.</h3>
+<p><b>"The Forest School"</b> — that was what those who knew called it. Those who did not know called it nothing, because for them this place did not exist. A complex of buildings in a forest outside Moscow, behind three security perimeters, without a single road sign. A place where they made those who would later not exist.</p>
+<p>Auditorium 117. First year. Twenty-three people — the best of the best, having passed a selection process they would not tell even their parents about. Average age — twenty-four years. Average IQ — one hundred forty-two. Average amount of fear — zero.</p>
+<p>Until this day.</p>
+<p>The cadets sat at desks arranged in an amphitheatre. Uniform — civilian clothing, no insignia whatsoever. Here there were no ranks. Here there were only those who would pass and those who would not pass.</p>
+<p>The clock on the wall showed 08:57.</p>
+<p>"Have you heard about 'applied materials science'?" whispered Dmitry, sitting in the second row, to his neighbour.
+"Third year says it's mandatory," the other whispered in response. "They say if you don't attend these lectures — you're not a man."
+"And who teaches it?"
+"Some American woman. A defector, apparently. I don't know anything more."
+"An American? At the 'Forest School'?"
+His neighbour shrugged.</p>
+<p>08:59.
+The auditorium fell silent. Twenty-three pairs of eyes watched the door.</p>
+<p>09:00.
+Exactly. Second by second.
+The door opened.
+<b>She entered.</b></p>
+<p>The auditorium gasped involuntarily — a single, stifled sound that escaped from twenty-three throats simultaneously. Someone in the first row dropped a pen. It rolled across the floor, and the sound seemed deafening in the silence that had fallen.</p>
+<p>Slender.
+Tall — one metre seventy-five minimum, plus heels that added another ten centimetres. The heels — thin, elegant, lethal.</p>
+<p>A blonde — natural, this was visible from the texture of her hair, from the way light from the window played on the strands. Her hair was pulled back, revealing a high neck upon which lay a string of pearls. Simple. Elegant. Worth, probably, the annual salary of each person present.</p>
+<p>The dress — dark blue, haute couture, perfectly fitted to a figure that had no right to exist on a woman of her age. Everyone knew — from whispers, from rumours, from fragments of information that had seeped through the walls of secrecy — that she was about 45. That she had three children. That she had been the CEO of the largest pharmaceutical company in the world.</p>
+<p>No one believed it.</p>
+<p>Because the woman who was now walking to the lectern looked like a fantasy come to life. The sculptural curves of her body — the result, as the few initiated knew, of her own developments in the field of implants — left no doubt: she did not merely teach materials science. She was its embodiment.</p>
+<p>But then she raised her eyes.
+<b>And the fantasy died.</b></p>
+<p>Blue eyes — no, not "stirring." Not "enchanting." Not "deep" or "alluring" — all these were vulgar epithets from cheap novels.</p>
+<p><b>Steel</b>.</p>
+<p>
+The eyes of a person who had seen death. The eyes of a person who had made decisions upon which lives depended. The eyes of a person who had lost everything — and survived.</p>
+<p>The first row drew their heads into their shoulders. Involuntarily. Instinctively. Like gazelles before a lioness.</p>
+<p>She stopped at the lectern. She swept her gaze across the auditorium — slowly, methodically, registering each face. Twenty-three people. Twenty-three future operatives. Twenty-three lives that she now held in her hands.</p>
+<p>"Good morning."
+Her voice was low, melodious, with a slight accent — American, barely noticeable, but sufficient to make every word sound... different.
+"My name is <i><u>Evgeniya</u> Golitsyna</i>. Professor Golitsyna."</p>
+<p>She pronounced her name in Russian — the name she had taken together with her new life. Jane had become Evgeniya. Jane had become Zhenya. But the steel in her eyes remained the same.</p>
+<p>"This course is called 'Applied Materials Science.'"
+She smiled slightly — with the corner of her lips, almost imperceptibly.
+"You will learn why it is called that. Later. If you earn it."</p>
+<p>A pause.</p>
+<p>"We shall begin with a survey of your knowledge."
+Jane — Evgeniya — opened an elegant woman's handbag lying on the lectern. Black leather, gold hardware, no logos. The handbag of a woman who did not need to prove her status.</p>
+<p>Something gleamed inside.
+Blued steel. Characteristic contours. A grip protruding from beneath a silk scarf.
+Several cadets recognised the silhouette. SR-1. "Gyurza." A weapon that is not carried for show.</p>
+<p>Evgeniya took out a telephone.</p>
+<p>As if nothing had happened. As if a pistol in a woman's handbag were as ordinary as lipstick or car keys.</p>
+<p>"The questions are at the link on the screen," she said, nodding at the projector behind her. A QR code appeared on the white canvas. "Time — fifteen minutes. Passing score — eighty per cent. Those who do not pass will leave the auditorium and will not return."</p>
+<p>She swept her gaze over the hushed cadets.
+"And do not argue."
+A pause. A smile.
+A radiant, dazzling smile that instantly disarmed everyone. A smile that made twenty-three hearts skip a beat. The smile of a woman who knew precisely the effect she produced — and used it as a weapon.
+"I have spoken."</p>
+<p>The timer on the screen blinked.</p>
+<p>15:00.
+14:59.
+14:58.
+Twenty-three cadets grabbed their telephones.</p>
+<p>Evgeniya Golitsyna — Jane, Zhenya, widow of "Poruchik," mother of three sons, former CEO, current professor of the "Forest School."
+The watch on her wrist — white gold, diamonds, a serial number on the back cover — counted the seconds.
+And next to the watch, on the ring finger of her left hand, it shone.</p>
+<p><b>The Ring.</b></p>
+<p>Art Deco. Platinum. A deep blue Ceylon sapphire in a cushion cut, surrounded by a geometric pattern of small diamonds. The ring she had chosen in an antique shop not far from Sausalito — an eternity ago, seventy-two hours after she had met him.</p>
+<p>"Mathematics and magic," she had said then. "A rigid structure holding soft fire."</p>
+<p>Seven years.
+For seven years she had worn this ring. Through pregnancy. Through childbirth. Through years of happiness. Through that night when the world split in two. Through the call to the embassy. Through eleven minutes on the roadside in Sausalito. Through a new name, a new country, a new life.</p>
+<p>The ring remained.
+The ring always remained.</p>
+<p>Some of the cadets — those who sat closer, those whose eye was sufficiently trained — noticed it. They noticed how the light refracted in the depths of the sapphire. They noticed how the platinum had darkened with time in those places where the metal touched skin — the sign of a ring that is never removed. Never.</p>
+<p>They did not know the story.
+They did not know about the man who had bought this ring after three days of acquaintance and said: "Ideally, forever."
+They did not know about the "black swan" — the statistical impossibility that had become her life.
+They did not know about the lake in the Carpathians, about the black smoke obscuring the stars, about three bodies turned to ash.
+But they saw the ring.</p>
+<p>And something in their young, not yet fully formed souls understood: a woman who wears such a ring in such a manner — never removing it, never hiding it, never ashamed of it — this woman knows more about love and loss than they would learn in all their lives.
+If they lived that long.</p>
+<p>Evgeniya caught the gaze of one of the cadets — a young man in the second row who was looking not at the screen with questions but at her hand. At the ring.
+She raised an eyebrow slightly.</p>
+<p>The young man started and buried himself in his telephone.</p>
+<p>Jane smiled.
+"Yes, boy," she thought. "Look. Remember. This is what is worth living for. And what is worth dying for."</p>
+<p>She touched the ring — automatically, almost unconsciously. A gesture that had become part of her over these years. A gesture that returned her to him — to Mark, to "The Lieutenant," to the man who had seen in her what she herself had not seen.</p>
+<p>"Ideally, forever," he had said then.
+"Forever," she answered now. Mentally. Silently. Across years and distances, across the border between the living and the dead.
+"Forever, my beloved. I have spoken."</p>
+<p>The timer on the screen showed 12:47.</p>
+<p>The cadets were typing.</p>
+<p>Professor Golitsyna waited.</p>
+<p>The ring shone.</p>
+<p>She watched her students.</p>
+<p>And thought of Mark.</p>
+<p>Of how proud he would be of her now.
+Of how he would have laughed, seeing the expressions on their faces.
+Of how he would have said: "You've already broken them, my love. In the first thirty seconds."
+She smiled.</p>
+<p>The timer continued its countdown.</p>
+<hr />
+<p>May in Moscow is a special time.</p>
+<p>The city awakens after a long winter, trees explode with greenery, and even the most cynical Muscovites permit themselves to smile without reason. The Arbat — old, pedestrian, touristy — fills with life: street musicians, artists with easels, couples in love, grandmothers with grandchildren.</p>
+<p>Evgeniya Golitsyna sat at a table of a street café, in the shade of an old chestnut tree, and read a book.</p>
+<p>Shakespeare. "King Lear." In Russian.</p>
+<p>But not a modern translation — no. An 1893 edition, translated by Pavel Aleksandrovich Kanshin. The book was old, with yellowed pages and a worn leather binding. Jane had found it in an antiquarian bookshop on Nikitskaya three years ago and had reread it regularly since.</p>
+<p>Kanshin was a genius.</p>
+<p>He did not merely translate words — he translated the soul. Shakespearean "blank verse" iambic pentameter transformed into Russian so organically, as if the Bard had written in it originally. Archaic turns of phrase that would sound absurd in a modern translation sang in Kanshin's version.</p>
+<p>"Blow, wind, blow, until your cheeks burst!"</p>
+<p>Jane smiled. Quietly, imperceptibly, to herself.</p>
+<p>"Pour, rain, pour! Torrents of water and hurricanes, you..."</p>
+<p>She laughed — briefly, almost silently. An elderly couple at the neighbouring table glanced at her with slight bewilderment. A beautiful woman, alone, laughing at a book. Strange. But Moscow had seen stranger things.</p>
+<p>Jane sipped her coffee — black, without sugar, the only way she had drunk it for the last two years — and turned the page.</p>
+<p>The sun warmed. The chestnut rustled. The world was, for a moment, almost kind.</p>
+<p>And then the sun disappeared.</p>
+<p>A shadow fell across the page — distinct, solid, human. Jane did not raise her eyes. With peripheral vision she noted: military uniform. Shoulder boards.</p>
+<p>"Again," she thought with weary irritation.</p>
+<p>This happened. Not often, but it happened. Young officers, seeing a beautiful woman alone at a table, decided to try their luck. They did not know who she was. They did not know what she was. They saw only a blonde with a sculpted figure and thought the universe had smiled upon them.</p>
+<p>Poor boys.</p>
+<p>"Comrade officer," said Jane, not lifting her gaze from the book. Her voice was even, cold, with that particular shade of boredom she had honed over years of work at the "Forest School." "I recommend that you turn around and simply leave. Otherwise you will have trouble with your superiors."</p>
+<p>A pause.</p>
+<p>"This I guarantee you."</p>
+<p>She turned the page. Lear was going mad on the heath. The storm raged. Kanshin was magnificent.</p>
+<p>"I wonder," Jane thought detachedly, "will he snap to attention and salute, or simply leave? It has happened both ways..."</p>
+<p>Usually they left. Something in her voice — or perhaps in her posture, or in the way she held her hand near her handbag — told them that this woman was not joking.</p>
+<p>The shadow did not move.</p>
+<p>And then he replied.</p>
+<p>"That is unlikely."</p>
+<p>The voice was low. Calm. With a slight hoarseness — the kind that appears from long years of command, from shouting on training grounds, from conversations in smoke-filled headquarters.</p>
+<p>"My stars are twenty-two ..."</p>
+<p>A pause. Jane felt her fingers tighten on the page.</p>
+<p>"...almost like your heels."</p>
+<p>The voice.</p>
+<p>The world stopped.</p>
+<p>The sounds of the Arbat — music, laughter, the noise of cars from the neighbouring street — everything disappeared, collapsed into a point, as then, on the Golden Gate Bridge, when she had fallen asleep in the AMG.</p>
+<p>His voice.</p>
+<p>This was impossible. Absolutely, categorically, statistically impossible. She had seen the photographs from the operation. She had read the report — dry lines about a thermobaric explosion, about three bodies, about a funeral pyre by a nameless lake.</p>
+<p>She had worn mourning for three years.</p>
+<p>She knew he was dead.</p>
+<p>Jane raised her eyes.</p>
+<p>A Major General of the FSB.</p>
+<p>Two stars on the shoulder boards — indeed twenty-two millimetres, she noted this automatically, because her mind clung to details, trying to hold on to reality. The mess jacket fitted perfectly. His bearing — impeccable. Grey at the temples — more than she remembered. A thermal scar on his left cheek — new, which had not been there before.</p>
+<p>But the eyes.</p>
+<p>Grey eyes that looked at her with the same calm, devastating tenderness as eight years ago, in the conference room in San Francisco.</p>
+<p>"Mark..."</p>
+<p>Her lips pronounced the name, but there was no sound. Only an exhalation. Only air leaving her lungs.</p>
+<p>The world tilted.</p>
+<p>The book fell from her hands — Kanshin, 1893, a priceless edition — and fell onto the cobblestones. The coffee cup overturned, the dark liquid spreading across the white tablecloth.</p>
+<p>Jane did not notice.</p>
+<p>She looked at him.</p>
+<p>At the ghost.</p>
+<p>At the man whom she had buried in her heart three years ago and who now stood before her, alive, real, in the uniform of an FSB Major General, and smiled — with that very smile which had once bewitched her.</p>
+<p>"I..."</p>
+<p>Darkness flooded in from the edges of her vision. Her legs gave way.</p>
+<p>The last thing she saw — how his arms darted forward, habitually, instinctively, as if he had caught her a thousand times before.</p>
+<p>The last thing she felt — his scent. The very same. Cedar and something ineffably his.</p>
+<p>The last thing she thought:</p>
+<p>"A black swan. Again..."</p>
+<hr />
+<p>The café patrons froze.</p>
+<p>The street musician stopped playing. The waiter stood motionless with his tray. The elderly couple at the neighbouring table watched, mouths agape.</p>
+<p>An FSB Major General — tall, greying, with a scar on his cheek and a Hero of Russia star — held a woman in his arms.
+An impossibly beautiful blonde. In a deep faint. Her head had fallen back, golden hair spilling across his sleeve. On the ring finger of her left hand shone a ring — Art Deco, platinum, a deep blue sapphire.</p>
+<p>The General looked at her face.
+And in his eyes — in those very steely grey eyes that had seen death many times — there was something the café patrons could not understand.</p>
+<p>Something resembling a prayer.
+"I have returned," he whispered. "Forgive me for taking so long. I have returned, my love."</p>
+<p>He lifted her easily — like a feather, like then, in Sausalito, when she had fallen asleep in the car and when later he had carried her to the bedroom.</p>
+<p>"Call a doctor," he said to the waiter, who had finally come to his senses.</p>
+<p>And added, more quietly, only for her:</p>
+<p>"I have spoken."</p></div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    

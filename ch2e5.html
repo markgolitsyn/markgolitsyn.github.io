@@ -1,0 +1,160 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat History Export</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .chat-container {
+                /* Changed: Removed max-width and margin: auto */
+                width: 100%; 
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                box-sizing: border-box; /* Ensures padding doesn't cause horizontal scroll */
+            }
+            .message {
+                margin-bottom: 25px;
+                padding: 20px;
+                border-radius: 8px;
+                line-height: 1.6;
+            }
+            .role-label {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+            }
+            /* Role Specific Styles */
+            .user {
+                background-color: #e3f2fd; /* Light Blue */
+                border-left: 5px solid #2196f3;
+            }
+            .user .role-label { color: #1565c0; }
+            
+            .assistant {
+                background-color: #f5f5f5; /* Light Gray */
+                border-left: 5px solid #757575;
+            }
+            .assistant .role-label { color: #616161; }
+            
+            .system {
+                background-color: #fff3e0; /* Light Orange */
+                border-left: 5px solid #ff9800;
+                font-size: 0.9em;
+            }
+            .system .role-label { color: #ef6c00; }
+
+            /* Markdown Element Styling */
+            .content h1, .content h2, .content h3 { margin-top: 0; }
+            .content p { margin-bottom: 10px; }
+            .content ul { padding-left: 20px; }
+            .content blockquote {
+                border-left: 4px solid #ccc;
+                margin: 10px 0;
+                padding-left: 15px;
+                color: #666;
+                font-style: italic;
+            }
+            .content code {
+                background-color: #e0e0e0;
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+            
+            /* Make images responsive just in case */
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <h1>Chat History</h1>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
+    
+            <div class="message system">
+                <div class="role-label">system</div>
+                <div class="content"><p>You are an advanced AI assistant.</p></div>
+            </div>
+        
+            <div class="message assistant">
+                <div class="role-label">assistant</div>
+                <div class="content"><p>The mirror was old — a silver lid with engraving, worn from a thousand touches. Grandmother's. The only thing Lena had taken with her when she left Vladivostok eight years ago.</p>
+<p>She looked at her reflection and thought about the fact that she was twenty-six, that she had already sat through this shift for nine hours, and that the coffee in the embassy cafeteria was getting worse with each passing year.</p>
+<p>The telephone rang. Internal line. A call redirected from the main switchboard. Lena snapped the mirror shut, set it aside, and answered the call.</p>
+<p>"Embassy of the Russian Federation, my name is Elena, please introduce yourself."</p>
+<p>The voice was automatic, rehearsed through thousands of such calls. Lost passports. Visa questions. Sometimes — hysterics from tourists stranded at the airport.</p>
+<p>A second of silence.</p>
+<p>Lena had already opened her mouth to repeat the greeting when a female voice uttered a single word:</p>
+<p><b>"Vympel."</b></p>
+<p>The world stopped.</p>
+<p>Lena felt a chill run down her spine — not fear, no. Something else. Something she had been taught three years ago, in a room without windows, by instructors without names.</p>
+<p>"This word you will hear, perhaps, never. But if you do hear it — everything else ceases to exist."</p>
+<p>Her fingers were already moving across the keyboard — quickly, precisely, without a single unnecessary command. Activation protocol. Voice identification. Biometric analysis in real time.</p>
+<p>A face appeared on the screen.</p>
+<p>A woman. Forty-something. Blonde — natural, this was evident from the texture, from the way light fell on the hair. Slender, fit, with the posture of a person accustomed to command. Sculptural cheekbones. Lips that probably knew how to smile — but not now.</p>
+<p>And the eyes.</p>
+<p>Blue. Piercing. Eyes that had seen something terrible and had not looked away.</p>
+<p>"This woman sounds as if she is ready to give her life for her children right now," thought Lena.</p>
+<p>She lowered her gaze below — to where the system had already displayed the dossier.</p>
+<p>GOLITSYNA, Jane. née Smith.<br>
+Status: PROTECTED.<br>
+Linked file: GOLITSYN, Mark. Callsign: PORUCHIK.<br>
+Status: KIA. Operation [REDACTED]. Date: [REDACTED].</p>
+<p>Lena stared at the screen.</p>
+<p>"Just as her husband gave his for someone else's..."</p>
+<p>She closed her eyes for a second. One second — an impermissible luxury. Then opened them and switched to English.</p>
+<p>"The code, please."</p>
+<p>The voice on the line did not waver:</p>
+<p>"Seven. Four. Two. Nine. Zero. Three. Eight. One."</p>
+<p>Lena entered the digits. The system flashed green.</p>
+<p>CONFIRMED. EXTRACTION PROTOCOL ALPHA. PRIORITY: MAXIMUM.</p>
+<p>Her fingers were already typing commands — one after another, activating a chain that would now awaken people at three different points in the city. People who had been waiting for such a call at every moment. People who, perhaps, had hoped it would never come.</p>
+<p>"Mrs. Golitsyna," said Lena, and her own voice sounded different now. Firmer. Older. "Be ready in exactly twelve minutes."</p>
+<p>She watched the timer in the corner of the screen. 12:00. 11:59. 11:58.</p>
+<p>"There will be two cars. Sedan and minivan. Black. No markings."</p>
+<p>11:52. 11:51.</p>
+<p>"Get out of the house to the curb in eleven minutes. Take your sons. Take nothing else."</p>
+<p>A pause on the other end. Brief. Almost imperceptible.</p>
+<p>"When you reach the curb, tie the shoe of one of your sons."</p>
+<p>11:41. 11:40.</p>
+<p>"This is the signal. This tells our people that you are not under duress. That this is your choice."</p>
+<p>Lena heard the breathing on the other end of the line. Even. Controlled. The breathing of a person who had already made a decision.</p>
+<p>"Whatever happens — don't pay attention to anything. Cars, people, sounds. Nothing. Your only goal is to get inside of the minivan. The side door will be open."</p>
+<p>11:22. 11:21.</p>
+<p>"When the door closes behind you..."</p>
+<p>Lena paused. Not for dramatic effect. Simply to make certain that the next words would be heard.</p>
+<p>"...you are out of the jurisdiction. Forever."</p>
+<p>Silence.</p>
+<p>Then a voice — the voice of a woman with piercing blue eyes, a woman who had lost her husband and was now losing everything else in order to save her children:</p>
+<p>"I understand."</p>
+<p>A pause.</p>
+<p>"Eleven minutes."</p>
+<p>"Eleven minutes," confirmed Lena.</p>
+<p>"Thank you, Elena."</p>
+<p>The line disconnected.</p>
+<p>Lena stared at the screen. The timer continued to run. 10:47. 10:46. 10:45.</p>
+<p>In the photograph in the dossier, Jane Golitsyna was smiling. The picture was old — perhaps five years old. She stood on some veranda, flooded with sunlight, and looked somewhere beyond the frame. At someone.</p>
+<p>"At him," Lena understood. "At the Poruchik."</p>
+<p>She took out the mirror. Opened it. Looked at her reflection.</p>
+<p>Twenty-six years old. Nine hours on shift. Bad coffee.</p>
+<p>And a woman on the other end of the line who had ten minutes and forty-three seconds left to gather three children and step into the void.</p>
+<p>Lena closed the mirror. She had done her job.</p>
+<p>Now there was nothing left but to wait.</p></div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    

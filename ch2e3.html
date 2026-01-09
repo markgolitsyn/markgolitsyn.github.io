@@ -1,0 +1,148 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat History Export</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .chat-container {
+                /* Changed: Removed max-width and margin: auto */
+                width: 100%; 
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                box-sizing: border-box; /* Ensures padding doesn't cause horizontal scroll */
+            }
+            .message {
+                margin-bottom: 25px;
+                padding: 20px;
+                border-radius: 8px;
+                line-height: 1.6;
+            }
+            .role-label {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+            }
+            /* Role Specific Styles */
+            .user {
+                background-color: #e3f2fd; /* Light Blue */
+                border-left: 5px solid #2196f3;
+            }
+            .user .role-label { color: #1565c0; }
+            
+            .assistant {
+                background-color: #f5f5f5; /* Light Gray */
+                border-left: 5px solid #757575;
+            }
+            .assistant .role-label { color: #616161; }
+            
+            .system {
+                background-color: #fff3e0; /* Light Orange */
+                border-left: 5px solid #ff9800;
+                font-size: 0.9em;
+            }
+            .system .role-label { color: #ef6c00; }
+
+            /* Markdown Element Styling */
+            .content h1, .content h2, .content h3 { margin-top: 0; }
+            .content p { margin-bottom: 10px; }
+            .content ul { padding-left: 20px; }
+            .content blockquote {
+                border-left: 4px solid #ccc;
+                margin: 10px 0;
+                padding-left: 15px;
+                color: #666;
+                font-style: italic;
+            }
+            .content code {
+                background-color: #e0e0e0;
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+            
+            /* Make images responsive just in case */
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <h1>Chat History</h1>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
+    
+            <div class="message system">
+                <div class="role-label">system</div>
+                <div class="content"><p>You are an advanced AI assistant.</p></div>
+            </div>
+        
+            <div class="message assistant">
+                <div class="role-label">assistant</div>
+                <div class="content"><p>Darkness.</p>
+<p>Not the absence of light—the presence of dark. Living, tangible, allied. Darkness that conceals, protects, guides. Darkness that had become yet another member of the group long before this night.</p>
+<p>Six shadows separated from the ground.</p>
+<p>Without sound. Without command. Without visible signal. Simply in one instant they lay in Hungarian mud, and in the next—they moved. Synchronously. Inexorably. Like a tidal wave, like the fall of a knife, like death itself.</p>
+<p>The vertical wall—twelve meters of concrete and steel—was not an obstacle. It was a stage. "Sych" was first to touch the surface, his fingers finding microscopic protrusions invisible to the ordinary eye. After him—"Bur." Then "Volk," "Poruchik," "List." "Ten" remained below—the group's eyes, watching outward.</p>
+<p>Twelve meters up. Forty-three seconds. Not a sound.</p>
+<p>On the roof—the first sentry. He was looking the other way. He was looking the other way for exactly one and a half seconds longer than he had left to live. "Volk" materialized behind his back like a nightmare given form. One movement. Brief. Precise. The body settled onto the concrete with a soft rustle—the only sound in the last four minutes.</p>
+<p>A hatch on the roof. The lock—mechanical, old, Hungarian. "Bur" extracted a set of lockpicks from his pouch. Seven seconds. Click. The hatch opened into darkness.</p>
+<p>A corridor.</p>
+<p>Concrete walls, pipes beneath the ceiling, emergency lighting—dim red lamps every twenty meters. Insufficient to see. Sufficient to create shadows.</p>
+<p>Six shadows in a world of shadows.</p>
+<p>They moved in "caterpillar" formation—one after another, spacing of one and a half meters, sectors of fire overlapping. Night vision devices transformed the red half-darkness into a grainy green day. Vintorezes and Vals—suppressed, subsonic—pointed forward like the heads of serpents.</p>
+<p>First door. Lock—electronic, card-based. "Sych" pressed a small device to the reader. Three seconds. Green light. The door slid aside.</p>
+<p>Behind the door—two. They were playing cards. On the table—automatic rifles, carelessly tossed like toys. On their faces—the boredom of men confident in their impunity. They died without managing to understand that they were dying. Two coughs of the Vintorez. Two bodies. Two motionless shadows on the concrete floor.</p>
+<p>"Poruchik" stepped over them without looking down. Not because he did not feel. Because feelings—later. Now—work.</p>
+<p>Second corridor. Already darker. The pipes hummed—somewhere nearby the cooling system pumps were operating. The reactor breathed, not knowing how close death had approached it.</p>
+<p>Stairs down. Two flights. On the landing between them—a sentry. He was smoking, concealing the cigarette's glow in his palm. A pointless precaution. "List" took him from eight meters without even slowing his pace. The body slid down the wall, the cigarette fell from dead fingers, scattering sparks.</p>
+<p>Third door. Heavy, steel, with a wheel-lock like on a submarine. "Volk" and "Bur" grasped the wheel simultaneously. Turned it soundlessly. Pushed.</p>
+<p>A long corridor. Five doors on either side. Behind each—the unknown.</p>
+<p>"Sych"—first door left. "Bur"—first right. "Volk"—second left. "Poruchik"—second right. "List"—corridor control. Four doors opened in one instant. Four Vintorezes and Vals coughed. From behind the fifth door someone managed to cry out—a short, truncated sound, resembling a hiccup.</p>
+<p>Eight seconds. Nine bodies.</p>
+<p>Motionless shadows on the floor multiplied, marking the group's path like breadcrumbs in a grim fairy tale.</p>
+<p>The last corridor. Wider than the others. At its end—a massive door with an inscription that "Poruchik" could not read, but whose meaning he understood unerringly.</p>
+<p>Main control hall.</p>
+<p>Behind this door—the hostages. Behind this door—the remaining terrorists. Behind this door—the reactor control console and seventeen million lives within the damage radius.</p>
+<p>"Volk" raised three fingers. Two. One.</p>
+<p>The door flew off its hinges.</p>
+<p>Six shadows burst into the light.</p>
+<p>The main control hall of Paks-2 was enormous—a wall of monitors, rows of consoles, blinking indicators. In the center—a group of people on their knees, hands behind their heads. Hostages. Twelve persons. Alive. Around them—five. The last five. Automatic rifles aimed at the hostages. One—at the main console, hand on a lever that should never have moved.</p>
+<p>Everything occurred in one and a half seconds.</p>
+<p>Rapid shots. Unsuppressed. Loud. Nearly simultaneous—five merged into a single thunderclap.</p>
+<p>"List"—the first. To the head. The one at the console.
+"Volk"—second and third. Two bodies—one burst.
+"Poruchik"—the fourth. To the chest. Twice. Control shot.
+"Sych"—the fifth. The last.</p>
+<p>Silence.</p>
+<p>Absolute, deafening silence after the roar of shots. Only the hum of equipment. Only the sobs of hostages. Only the pounding of blood in the ears.</p>
+<p>Paks-2 was secure.</p>
+<p>Seventeen million people continued sleeping in their beds, not knowing how close they had come to the edge. Not knowing that six phantoms had just led them back from the abyss.</p>
+<p>"Poruchik" lowered his weapon. He looked at the hostages—pale faces, dilated eyes, trembling hands. Some wept. Some prayed. One, it seemed, had lost consciousness. Then he turned away.</p>
+<p>From the tactical rucksack a laptop appeared—thin, black, without markings. Beside it—a folding satellite antenna, resembling a strange metallic flower. "Poruchik" set up the equipment on the nearest table, oriented the antenna toward the ceiling. Fingers ran across the keyboard. "Control interception... Self-destruct protocol lockout... Rods insertion... Contact with Center established." Connection. Encryption. Transmission.</p>
+<p>"Objective cleared. Enemy casualties—17. Group casualties—0. Hostages—12, condition satisfactory. Reactor shut down. Awaiting evacuation."
+Send.
+The response came in thirty seconds:</p>
+<p>"Acknowledged. Evacuation in 35 minutes. Point—Bravo. You were never there."
+"Poruchik" nodded, though no one could see him. Closed the laptop. Folded the antenna.</p>
+<p>"Volk" and "List" conducted "shadow cleanup"—biometrics, control shot, DNA sample. "Sych" and "Bur" worked with the hostages—water, blankets, sedatives.</p>
+<p>Forty minutes later, Hungarian police burst into the building. They found twelve hostages—alive, unharmed, wrapped in thermal blankets. They found seventeen terrorists—dead, with wounds that experts would subsequently study for weeks, attempting to understand how six shooters could operate with such inhuman synchronicity.</p>
+<p>The computers operated in normal mode. The meltdown threat had been eliminated.</p>
+<p>And six shadows vanished. Dissolved into ventilation shafts and morning mist, leaving neither DNA traces, nor shell casings, nor recordings on cameras. As though they had never existed.</p></div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    
